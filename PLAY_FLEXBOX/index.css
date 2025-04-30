@@ -164,13 +164,23 @@ The reason is so that we dont get a border in the middle, where we margined the 
 3 Boxes inside bottom container 
 */
 
-.first, .second, .third {
-    display: flex;
-    background-color: #dab1da;
-    border: 5px solid blue;
+.first, .second, .third, .fourth{
     height: 100px;
-    flex: 1;
     margin: 20px;
     box-sizing: border-box;
     align-items: center;
 }
+
+
+.first, .fourth{
+    background-color: #dab1da;
+    border: 5px solid blue;
+    width: 266.66px;
+}
+
+.second, .third{
+    background-color: peachpuff;
+    border: 5px solid darkorange;
+    width: 133.33px;
+}
+
