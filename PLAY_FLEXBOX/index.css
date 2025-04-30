@@ -29,7 +29,7 @@ Contain all other containers (Parent)
     display: flex;
     border: 5px solid green;
     background-color: #d1ffbd;
-    height: 800px;
+    height: 830px;
     width: 1000px;
     box-sizing: border-box;
     flex-direction: column; /* Added so we stack boxes top to bottom (for blue boxes)*/
@@ -156,5 +156,21 @@ The reason is so that we dont get a border in the middle, where we margined the 
     width: 950px;
     margin: 20px;
     box-sizing: border-box;
-    align-items: center; /* Aligns the 3 boxes below to center of this container*/
+    align-items: center;/* Aligns the 3 boxes below to center of this container*/
+}
+
+
+/* 
+3 Boxes inside bottom container 
+*/
+
+.first, .second, .third {
+    display: flex;
+    background-color: #dab1da;
+    border: 5px solid blue;
+    height: 100px;
+    flex: 1;
+    margin: 20px;
+    box-sizing: border-box;
+    align-items: center;
 }
